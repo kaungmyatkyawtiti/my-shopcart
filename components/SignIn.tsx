@@ -5,7 +5,7 @@ export default function SignIn() {
   return (
     <SignInButton mode="modal">
       <button className="hover:text-shop-violet hoverEffect">
-        <LogIn size={24} />
+        <LogIn className="h-8 w-8 rounded-full" />
       </button>
     </SignInButton>
   );

@@ -25,11 +25,12 @@ export default function Footer() {
           </div>
           <div>
             <SubTitle>Quick Links</SubTitle>
-            <ul className="space-y-3 mt-4">
+            <ul className="space-y-4 mt-4">
               {
                 quickLinks.map((link, ind) =>
                   <li
                     key={ind}
+                    className="text-[15px]"
                   >
                     <Link
                       href={link.href}
@@ -44,11 +45,12 @@ export default function Footer() {
           </div>
           <div>
             <SubTitle>Categories</SubTitle>
-            <ul className="space-y-3 mt-4">
+            <ul className="space-y-4 mt-4">
               {
                 categories.map((category, ind) =>
                   <li
                     key={ind}
+                    className="text-[15px]"
                   >
                     <Link
                       href={category.href}
@@ -66,12 +68,15 @@ export default function Footer() {
             <SubText>
               Subscribe to our newsletter to receive updates and exclusive offers
             </SubText>
-            <form className="space-y-3">
+            <form
+              className="flex gap-1 space-y-3 lg:flex-col"
+            >
               <Input
                 placeholder="Enter your email"
+                className="rounded-sm"
               />
               <Button
-                className="bg-shop-violet hover:bg-shop-violet/80 text-white w-full"
+                className="bg-shop-violet hover:bg-shop-violet/80 text-white rounded-sm"
               >
                 Subscribe
               </Button>
@@ -80,7 +85,7 @@ export default function Footer() {
         </div>
         <div className="py-6 text-center border-t border-border text-foreground/85">
           © {new Date().getFullYear()}{" "}
-          <MyLogo className="text-lg" />. All rights reserved.
+          <MyLogo className="text-[17px]" />. All rights reserved.
         </div>
       </MyContainer>
     </footer>

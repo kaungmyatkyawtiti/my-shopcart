@@ -36,11 +36,11 @@ export default function SideMenu({
           <Button
             onClick={onClose}
             title="close"
-            variant="destructive"
+            variant="ghost"
             size="sm"
-            className="rounded-full bg-destructive/85 hover:bg-destructive/75"
+            className="rounded-full hover:bg-secondary"
           >
-            <X size={14} />
+            <X size={18} />
           </Button>
         </div>
 

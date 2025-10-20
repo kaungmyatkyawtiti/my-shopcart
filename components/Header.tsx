@@ -7,7 +7,7 @@ import Navbar from "./Navbar";
 export default function Header() {
   return (
     <header
-      className="py-5 border-b border-border top-0 z-50 sticky backdrop-blur-md bg-background/80"
+      className="py-5 border-b border-border top-0 z-50 sticky backdrop-blur-lg bg-background/60"
     >
       <MyContainer
         className="flex items-center justify-between text-foreground/80"

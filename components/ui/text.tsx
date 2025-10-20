@@ -37,7 +37,6 @@ function SubTitle({
   )
 }
 
-
 function SubText({
   children,
   className,
@@ -45,7 +44,7 @@ function SubText({
   return (
     <p
       className={cn(
-        "text-sm font-semibold text-muted-foreground",
+        "text-[14px] font-semibold text-muted-foreground",
         className,
       )}
     >

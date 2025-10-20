@@ -33,13 +33,13 @@ const contacts: Contacts[] = [
 export default function FooterTop() {
   return (
     <div
-      className="grid grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-4 border-b border-border"
+      className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 border-b border-border"
     >
       {
         contacts.map((contact, ind) =>
           <div
             key={ind}
-            className="flex items-center gap-5 group hover:bg-secondary hoverEffect p-4"
+            className="flex items-center gap-4 group hover:bg-secondary hoverEffect px-3 py-4"
           >
             {contact.icon}
             <div className="font-semibold">

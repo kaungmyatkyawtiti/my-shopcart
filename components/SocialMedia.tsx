@@ -44,7 +44,9 @@ export default function SocialMedia() {
                   {social.icon}
                 </Link>
               </TooltipTrigger>
-              <TooltipContent className="bg-discount-blue text-foreground font-medium p-2 rounded-xl border border-shop-violet mb-2">
+              <TooltipContent
+                className="bg-discount-blue text-foreground font-medium text-sm py-1 px-2 rounded-xl border border-shop-violet mb-2"
+              >
                 <p>{social.title}</p>
               </TooltipContent>
             </Tooltip>
