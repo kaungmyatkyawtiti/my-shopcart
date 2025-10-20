@@ -5,7 +5,9 @@ import Image from "next/image";
 
 export default function HomeBanner() {
   return (
-    <div className="bg-discount-blue rounded-b-lg flex items-center justify-between px-10 md:px-20 py-10">
+    <div
+      className="bg-discount-blue rounded-b-lg flex flex-col-reverse md:flex-row items-center justify-between px-0 md:px-20 py-10 text-center md:text-left gap-7"
+    >
       <div className="space-y-5">
         <Title>
           Discount 50% off<br />
@@ -21,13 +23,14 @@ export default function HomeBanner() {
           </Button>
         </Link>
       </div>
-      <div>
+
+      <div className="relative w-55 h-55">
         <Image
           src="/discount.png"
           alt="Discount"
-          width={180}
-          height={180}
-          className="hidden md:inline"
+          fill
+          className="object-cover"
+          priority
         />
       </div>
     </div>
