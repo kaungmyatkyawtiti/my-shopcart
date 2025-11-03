@@ -73,7 +73,7 @@ export default function Footer() {
             >
               <Input
                 placeholder="Enter your email"
-                className="rounded-sm"
+                className="rounded-sm max-w-80"
               />
               <Button
                 className="bg-shop-violet hover:bg-shop-violet/80 text-white rounded-sm"
