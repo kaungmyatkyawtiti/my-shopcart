@@ -9,22 +9,22 @@ interface Contacts {
 
 const contacts: Contacts[] = [
   {
-    icon: <MapPin />,
+    icon: <MapPin className="text-shop-violet" />,
     title: "Visit Us",
     subTitle: "Yangon: Insein"
   },
   {
-    icon: <Phone />,
+    icon: <Phone className="text-shop-violet" />,
     title: "Call Us",
     subTitle: "09 787 484 437"
   },
   {
-    icon: <Clock />,
+    icon: <Clock className="text-shop-violet" />,
     title: "Working Hours",
     subTitle: "Mon - Sat: 9:00 AM - 6:00 PM"
   },
   {
-    icon: <Mail />,
+    icon: <Mail className="text-shop-violet" />,
     title: "Email Us",
     subTitle: "kmktiti2003@gmail.com"
   },
@@ -39,7 +39,7 @@ export default function FooterTop() {
         contacts.map((contact, ind) =>
           <div
             key={ind}
-            className="flex items-center gap-4 group hover:bg-secondary hoverEffect px-3 py-4"
+            className="flex items-center gap-4 group hover:bg-secondary px-3 py-4 hover-effect"
           >
             {contact.icon}
             <div className="font-semibold">

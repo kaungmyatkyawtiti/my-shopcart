@@ -8,6 +8,7 @@ import { Button } from "./ui/button";
 import SocialMedia from "./SocialMedia";
 import { ModeToggle } from "./ModeToggle";
 import { Kbd, KbdGroup } from "./ui/kbd";
+import SearchBar from "./SearchBar";
 
 interface SideMenuProps {
   isOpen: boolean;
@@ -23,7 +24,7 @@ export default function SideMenu({
   return (
     <div
       className={cn(
-        "fixed inset-y-0 h-screen left-0 z-50 w-full bg-black/40 shadow-xl hoverEffect lg:hidden",
+        "fixed inset-y-0 h-screen left-0 z-50 w-full bg-black/40 shadow-xl lg:hidden hover-effect",
         isOpen ? "translate-x-0" : "-translate-x-full",
       )}
       onClick={onClose}
@@ -37,7 +38,7 @@ export default function SideMenu({
             onClick={onClose}
             title="close"
             variant="ghost"
-            size="sm"
+            size="icon-sm"
             className="rounded-full hover:bg-secondary"
           >
             <X size={18} />
@@ -46,7 +47,9 @@ export default function SideMenu({
 
         <div className="flex items-center justify-between">
           <MyLogo />
-          <ModeToggle />
+          <div className="lg:hidden">
+            <ModeToggle />
+          </div>
         </div>
 
         <div className="flex flex-col space-y-2">
@@ -56,7 +59,7 @@ export default function SideMenu({
                 key={ind}
                 href={link.href}
                 className={cn(
-                  "text-muted-foreground hover:text-shop-violet hover:bg-accent py-2 px-3 rounded-md hoverEffect font-semibold",
+                  "text-muted-foreground hover:text-shop-violet hover:bg-accent py-2 px-3 rounded-md font-semibold hover-effect",
                   pathname === link.href && "text-shop-violet bg-accent"
                 )}
               >
@@ -67,21 +70,9 @@ export default function SideMenu({
         </div>
 
         <div
-          className="md:hidden"
+          className="lg:hidden"
         >
-          <Button
-            variant="secondary"
-          >
-            <Search size={16} />
-            <span>Search</span>
-            <div>
-              <KbdGroup>
-                <Kbd>Shift</Kbd>
-                <span>+</span>
-                <Kbd>K</Kbd>
-              </KbdGroup>
-            </div>
-          </Button>
+          <SearchBar />
         </div>
 
         <div>

@@ -1,4 +1,5 @@
 "use client";
+
 import { links } from "@/lib/data";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
@@ -15,14 +16,14 @@ export default function Navbar() {
             key={ind}
             href={link.href}
             className={cn(
-              "relative text-muted-foreground hover:text-shop-violet hoverEffect group",
+              "relative text-muted-foreground hover:text-shop-violet group hover-effect",
               pathname === link.href && "text-shop-violet"
             )}
           >
             {link.name}
             <span
               className={cn(
-                "absolute left-0 -bottom-[2px] h-[2px] w-0 bg-shop-violet hoverEffect group-hover:w-full",
+                "absolute left-0 -bottom-[2px] h-[2px] w-0 bg-shop-violet group-hover:w-full hover-effect",
                 pathname === link.href && "w-full"
               )}
             ></span>

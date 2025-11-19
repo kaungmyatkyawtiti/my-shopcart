@@ -11,7 +11,7 @@ export default function MobileMenu() {
     <>
       <button
         title="menu"
-        className="hover:text-shop-violet p-2 hover:bg-secondary rounded-full hoverEffect lg:hidden"
+        className="hover:text-shop-violet p-2 hover:bg-secondary rounded-full lg:hidden hover-effect"
         onClick={() => isSideMenuOpen(!sideMenuOpen)}
       >
         <TextAlignStart size={26} />

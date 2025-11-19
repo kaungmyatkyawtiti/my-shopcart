@@ -12,7 +12,7 @@ export default function ClerkLogin() {
   return (
     <div className="h-8 w-8 flex items-center justify-center">
       <ClerkLoading>
-        <Skeleton className="h-8 w-8 rounded-full" />
+        <Skeleton className="h-8 w-8 rounded-full bg-gray-500" />
       </ClerkLoading>
 
       <ClerkLoaded>

@@ -17,7 +17,7 @@ export default function MyLogo({
     >
       <h2
         className={cn(
-          "text-2xl font-bold uppercase group hoverEffect text-foreground hover:text-shop-violet",
+          "text-2xl font-bold uppercase group text-foreground hover:text-shop-violet hover-effect",
           className
         )}
       >
